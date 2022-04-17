@@ -1,0 +1,42 @@
+.hero {
+  background: #030612;
+  background-image: repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 0,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      -135deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 0,
+      transparent 20px
+    );
+  padding: 160px 0;
+  @include a {
+    padding: 80px 0;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 80px;
+    color: $color-light;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    @include a {
+      font-size: 60px;
+    }
+  }
+  .info {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 52px;
+    max-width: 428px;
+    @include a {
+      margin-bottom: 32px;
+    }
+  }
+  .btn {
+    color: $color-light;
+  }
+}

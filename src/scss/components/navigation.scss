@@ -1,0 +1,65 @@
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include a {
+    position: relative;
+    order: 2;
+    display: block;
+    width: 100%;
+    padding: 0; // 30px
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &.is-active {
+      padding: 30px 0;
+      max-height: 25rem;
+    }
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include a {
+      display: block;
+    }
+  }
+  &__item {
+    position: relative;
+    @include a {
+      padding: 8px;
+    }
+    &:not(:last-of-type) {
+      margin-right: 24px;
+      @include a {
+        margin-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+  &__link {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    @include a {
+        display: block;
+    }
+  }
+  .btn {
+    padding: 9px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 99px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    white-space: nowrap;
+    @include a {
+        display: block;
+        text-align: center;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin-top: 24px;
+    }
+  }
+}

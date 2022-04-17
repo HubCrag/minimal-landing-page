@@ -1,0 +1,41 @@
+.features {
+  background: #f5f5f6;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @include a {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    @include a {
+      flex-basis: 45%;
+      margin-bottom: 20px;
+    }
+    @include s {
+      flex-basis: 100%;
+    }
+    &-icon {
+      margin-bottom: 16px;
+
+      //demo
+      width: 32px;
+      height: 32px;
+      background-color: #030612;
+      border-radius: 40px;
+    }
+    &-head {
+      margin-bottom: 8px;
+      .title {
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+    &-body {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
