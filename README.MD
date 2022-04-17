@@ -1,6 +1,6 @@
 ## Hubcrag Background Lines Effect
 
-### [Watch it on youtube](#)
+### [Watch it on youtube](https://youtu.be/t5qXgBKbG4o)
 
 
 ### Setup demo project
